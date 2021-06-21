@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-typescript-hello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^4.3.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavelbednar/nodejs-typescript-hello.git"
+  },
+  "author": "Pavel Bednář",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pavelbednar/nodejs-typescript-hello/issues"
+  },
+  "homepage": "https://github.com/pavelbednar/nodejs-typescript-hello#readme"
+}
