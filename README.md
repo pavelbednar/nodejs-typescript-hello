@@ -27,3 +27,20 @@ Pokud chceme soubor rovnou spustit, můžeme tak udělat příkazem
 ```node
 node Hello.js
 ```
+
+#Skripty
+Teď už chybí jen vytvořit npm skripty pro kompilaci a spuštění. Upravíme soubor `package.json`. Skript pro spuštění se obvykle jmenuje `start`, pro kompilaci obdobně `build` a můžeme přidat i `watch`, což je speciální režim kompilace, kdy `tsc` běží na pozadí a při každé změně ve zdrojovém kódu provede rekompilaci výstupního souboru.
+```node
+"scripts": {
+    "start": "node Hello.js",
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+```
+Skripty pak můžeme spouště pomocí npm příkazů `npm run`. U skriptu `start` je vyjímka, že se dá spustit přímo
+```node
+npm start
+npm run build
+```
+
+
