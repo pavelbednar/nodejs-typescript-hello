@@ -1,4 +1,4 @@
-# nodejs-typescript-hello
+Ukázka jednoduchého node.js projektu v typescriptu. Postup vytvoření projektu je popsán v následujících krocích:
 
 # Inicializace projektu
 ```node
@@ -27,8 +27,12 @@ Pokud chceme soubor rovnou spustit, můžeme tak udělat příkazem
 ```node
 node Hello.js
 ```
+V konzoli bude vidět text
+```node
+Hello, World!
+```
 
-#Skripty
+# Skripty
 Teď už chybí jen vytvořit npm skripty pro kompilaci a spuštění. Upravíme soubor `package.json`. Skript pro spuštění se obvykle jmenuje `start`, pro kompilaci obdobně `build` a můžeme přidat i `watch`, což je speciální režim kompilace, kdy `tsc` běží na pozadí a při každé změně ve zdrojovém kódu provede rekompilaci výstupního souboru.
 ```node
 "scripts": {
@@ -43,4 +47,4 @@ npm start
 npm run build
 ```
 
-
+Skripty lze zřetězit dohromady. Například pro spuštění bychom chtěli, aby napřed proběhla kompilace. `package.json` tedy upravíme takto
